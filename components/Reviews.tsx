@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef, useEffect } from "react";
+import React, { useRef } from "react";
 import { reviews } from "@/constants/index";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";

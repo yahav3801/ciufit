@@ -5,7 +5,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Road2 from "./Road2";
 import Image from "next/image";
-import { Facebook, FacebookIcon, Instagram } from "lucide-react";
+import { Facebook, Instagram } from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -123,10 +123,10 @@ const About = () => {
           <div className="flex flex-col lg:flex-row-reverse items-center gap-6 lg:gap-12 p-4 border-b border-gray-200">
             <div
               ref={circlesRef}
-              className="w-full lg:w-1/3 md:w-2/3  flex flex-row-reverse justify-center justify-start relative"
+              className="w-full lg:w-1/3 md:w-2/3  flex flex-row-reverse justify-center relative"
             >
               <div className="relative mr-4">
-                <div className="hover:bg-sky transition-colors absolute right-12 -top-12 texture-grain bg-[#68A0EA] w-12 h-12 lg:w-[55px] lg:h-[55px] md:w-[55px] md:h-[55px] rounded-full shadow-2xl z-10 relative">
+                <div className="hover:bg-sky transition-colors  right-12 -top-12 texture-grain bg-[#68A0EA] w-12 h-12 lg:w-[55px] lg:h-[55px] md:w-[55px] md:h-[55px] rounded-full shadow-2xl z-10 relative">
                   <a
                     href="https://www.instagram.com/gila.ciufit/"
                     target="_blank"
@@ -135,7 +135,7 @@ const About = () => {
                     <Instagram size={32} />
                   </a>
                 </div>
-                <div className="hover:bg-sky transition-colors absolute -right-3 -top-12  texture-grain bg-[#68A0EA] w-12 h-12 lg:w-[55px] lg:h-[55px] md:w-[55px] md:h-[55px] rounded-full shadow-2xl z-10 relative">
+                <div className="hover:bg-sky transition-colors  -right-3 -top-12  texture-grain bg-[#68A0EA] w-12 h-12 lg:w-[55px] lg:h-[55px] md:w-[55px] md:h-[55px] rounded-full shadow-2xl z-10 relative">
                   <a
                     href="https://www.facebook.com/profile.php?id=100002080400239"
                     target="_blank"
@@ -144,20 +144,27 @@ const About = () => {
                     <Facebook size={32} />
                   </a>
                 </div>
-                <div className="hover:bg-sky transition-colors absolute -right-10 -top-6  texture-grain bg-[#68A0EA] w-12 h-12 lg:w-[55px] lg:h-[55px] md:w-[55px] md:h-[55px] rounded-full shadow-2xl z-10 relative">
+                <div className="hover:bg-sky transition-colors  -right-10 -top-6  texture-grain bg-[#68A0EA] w-12 h-12 lg:w-[55px] lg:h-[55px] md:w-[55px] md:h-[55px] rounded-full shadow-2xl z-10 relative">
                   <a
                     target="_blank"
                     href="https://wa.me/972505717354"
                     className="text-white w-full h-full flex justify-center items-center"
                   >
-                    <img src="/whatsapp.svg" width={32} alt="" />
+                    <Image
+                      src="/whatsapp.svg"
+                      width={32}
+                      height={32}
+                      alt="whatsapp"
+                    />
                   </a>
                 </div>
               </div>
 
               <div className="-mr-4 md:-mr-6">
                 <div className="texture-grain bg-sky w-48 h-48 md:w-[255px] md:h-[255px] rounded-full shadow-2xl overflow-hidden">
-                  <img
+                  <Image
+                    width={255}
+                    height={255}
                     src="/aboutGila.png"
                     alt="Gila"
                     className="w-full h-full object-cover object-bottom"
@@ -175,7 +182,7 @@ const About = () => {
             </div>
 
             <div ref={toy2Ref} className="w-24 md:w-32 lg:w-40">
-              <img
+              <Image
                 src="/toy2.svg"
                 width={150}
                 height={150}
@@ -196,7 +203,7 @@ const About = () => {
             </p>
             <div ref={toy1Ref} className="w-full md:w-1/3 flex justify-center">
               <div className="w-32 md:w-32 lg:w-40 lg:-ml-28">
-                <img
+                <Image
                   src="/toy1.svg"
                   width={200}
                   height={200}
