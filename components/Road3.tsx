@@ -1,12 +1,10 @@
-import React, { useRef } from "react";
+import React from "react";
 import gsap from "gsap";
 import { MotionPathPlugin } from "gsap/all";
 import Image from "next/image";
 import { useGSAP } from "@gsap/react";
 gsap.registerPlugin(MotionPathPlugin);
 const Road3 = () => {
-  const bikeRef = useRef<HTMLElement>(null);
-  const horseRef = useRef<HTMLElement>(null);
   useGSAP(() => {
     const elements = gsap.utils.toArray<HTMLDivElement>("#bike3, #horse3");
     elements.forEach((el, i) => {
