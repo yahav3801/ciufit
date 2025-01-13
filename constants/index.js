@@ -1,7 +1,7 @@
 export const navLinks = [
-  { id: 0, name: "שאלות", href: "#contact" },
-  { id: 1, name: "חוויות", href: "#experiences" },
-  { id: 2, name: "עלינו", href: "#about" },
+  { id: 0, name: "שאלות", href: "/#contact" },
+  { id: 1, name: "חוויות", href: "/#experiences" },
+  { id: 2, name: "עלינו", href: "/#about" },
   { id: 3, name: "נגישות", href: "/accessibility" },
 ];
 
